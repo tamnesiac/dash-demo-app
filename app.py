@@ -10,7 +10,6 @@ from config import API_KEY
 from utils import kelvin2celsius, epoch2time
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN])
-server = app.server
 cities = defaultWeatherImg = None
 
 
@@ -127,4 +126,5 @@ def update_output(value):
 if __name__ == "__main__":
     load_data()
     load_style()
+    server = app.server
     app.run_server(debug=True)
