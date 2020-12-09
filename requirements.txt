@@ -7,4 +7,4 @@ dash-table==4.11.1
 pandas==1.1.2
 plotly==4.10.0
 requests==2.24.0
-
+gunicorn==20.0.4
